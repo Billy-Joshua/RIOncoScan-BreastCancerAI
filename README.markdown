@@ -1,13 +1,31 @@
-NEAREST NEIGHBOR ALGORITHM TEST
-===============================
+# RIOncoScan-BreastCancerAI
 
-## Purpose of Project
- - Test the accuracy of the Nearest Neighbor and K Nearest Neighbor algorithms on a dataset of breast cancers tumors
- - The dataset was divided into two parts, the training set, containing 80% of the data, and the prediction set, containing the other 20%.
- - The k-nearest neighbor algorithm was then used to predict whether the items in the prediction set were malignant or benign, by checking whether the nearest neighbors to it were malignant or benign
- - This was then compared with the actual value of the tumors in the prediction set, and the accuracy was calculated
+## Overview
+RIOncoScan is a Java-based AI project for predicting breast cancer. 
+It uses a neural network to classify tumors as **benign** or **malignant**. 
+The system can load real-world datasets, train a model, evaluate accuracy, and save predictions to CSV.
 
-## Results
-- For the nearest neighbor algorithm, the accuracy was about **91%**
-- For the k-nearest neighbor algorithm, the accuracy was **92%** for k=3, and about **93%** for both k=5 and k=7
-- Thus the accuracy seems to increase as the value of k increases.
+## Features
+- Loads CSV datasets with tumor features and labels (M/B)
+- Splits dataset into training and testing sets
+- Neural network with one hidden layer
+- Trains model with gradient descent
+- Evaluates test accuracy
+- Saves predictions to `predictions.csv`
+
+## Dataset
+- Source: [WDBC dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
+- CSV format:  
+`ID, Feature1, Feature2, ..., Feature30, Diagnosis (M/B)`
+- Optional: remove missing/invalid rows, normalize features
+
+## Usage
+```bash
+# Compile Java files
+javac RIOncoScan.java
+
+# Run the project (default input: cancer_data.csv)
+java RIOncoScan
+
+# Optional: specify input and output files
+java RIOncoScan wdbc.data predictions.csv
