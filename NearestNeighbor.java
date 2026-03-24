@@ -189,8 +189,8 @@ public class NearestNeighbor
       double numbercorrect=0.0;
       for(int i=0;i<testdata.length;i++) 
       {
-          double distance[][] = getDistances(i); //get the array of distances
-          double sorted[][]= sortDistances(distance); //sort the distances
+          double[][] distance = getDistances(i); //get the array of distances
+          double[][] sorted = sortDistances(distance); //sort the distances
           double actualvalue = testdata[i][0]; //actual classification
           double numbermalignant = 0;
           double numberbenign = 0;
