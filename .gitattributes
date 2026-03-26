@@ -1,0 +1,7 @@
+doc/** linguist-vendored=true
+*.html linguist-vendored=true
+README.markdown linguist-vendored=true
+README.md linguist-vendored=true
+
+# Keep Java as primary, ignore docs for language stats
+*.java linguist-vendored=false
