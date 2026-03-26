@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Java Project",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "*.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [
+                "$javac"
+            ]
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-f",
+                "*.class"
+            ],
+            "windows": {
+                "command": "cmd",
+                "args": [
+                    "/C",
+                    "del /F *.class 2>nul || exit /b 0"
+                ]
+            },
+            "presentation": {
+                "reveal": "silent"
+            }
+        }
+    ]
+}

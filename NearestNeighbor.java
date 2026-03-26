@@ -237,4 +237,4 @@ public class NearestNeighbor
       }
       return arrayofdistances;     
   } //end sortDistances method
-}
+}  

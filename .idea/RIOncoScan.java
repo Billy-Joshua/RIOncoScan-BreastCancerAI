@@ -341,7 +341,9 @@ class CancerNeuralNetwork {
 /**
  * PredictionSaver: saves predicted + actual labels to output CSV.
  */
-class PredictionSaver {
+class
+
+PredictionSaver {
     private final String filePath;
 
     public PredictionSaver(String filePath) {

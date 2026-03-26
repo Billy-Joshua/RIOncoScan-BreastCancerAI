@@ -6,13 +6,6 @@
             "name": "RIOncoScan",
             "request": "launch",
             "mainClass": "RIOncoScan",
-            "projectName": "RIOncoScan-BreastCancerAI_23112f3b"
-        },
-        {
-            "type": "java",
-            "name": "RIOncoScan",
-            "request": "launch",
-            "mainClass": "RIOncoScan",
             "projectName": "Cancer-Classification_f1f52b4b"
         },
         {
