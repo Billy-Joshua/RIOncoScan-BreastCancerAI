@@ -104,5 +104,3 @@ The project includes `.vscode` configuration for easy debugging and running:
 - Press `Ctrl+Shift+B` to build
 
 ## License
-
-This project is for educational purposes.
