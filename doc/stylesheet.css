@@ -1,29 +1,89 @@
-/* Javadoc style sheet */
+/* Root Variables for Consistency */
+:root {
+  --primary-color: #16477a;
+  --secondary-color: #01579b;
+  --background-color: #f5f8fb;
+  --text-color: #2b3a4d;
+  --border-color: #e0e6ed;
+  --hover-color: #0d3c6e;
+}
 
-/* Define colors, fonts and other style attributes here to override the defaults */
-
-/* Page background color */
-body { background-color: #FFFFFF; color:#000000 }
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
 
 /* Headings */
-h1 { font-size: 145% }
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
 
-/* Table colors */
-.TableHeadingColor     { background: #CCCCFF; color:#000000 } /* Dark mauve */
-.TableSubHeadingColor  { background: #EEEEFF; color:#000000 } /* Light mauve */
-.TableRowColor         { background: #FFFFFF; color:#000000 } /* White */
+/* Links */
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-/* Font used in left-hand frame lists */
-.FrameTitleFont   { font-size: 100%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
-.FrameHeadingFont { font-size:  90%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
-.FrameItemFont    { font-size:  90%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
+a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
 
-/* Navigation bar fonts and colors */
-.NavBarCell1    { background-color:#EEEEFF; color:#000000} /* Light mauve */
-.NavBarCell1Rev { background-color:#00008B; color:#FFFFFF} /* Dark Blue */
-.NavBarFont1    { font-family: Arial, Helvetica, sans-serif; color:#000000;color:#000000;}
-.NavBarFont1Rev { font-family: Arial, Helvetica, sans-serif; color:#FFFFFF;color:#FFFFFF;}
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
 
-.NavBarCell2    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF; color:#000000}
-.NavBarCell3    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF; color:#000000}
+/* Table Header */
+th {
+  background: var(--primary-color);
+  color: #ffffff;
+  text-align: left;
+  padding: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
 
+/* Table Cells */
+td {
+  padding: 0.7rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+  background: #f9fbfd;
+}
+
+/* Hover Effect */
+tr:hover {
+  background: #eef5fb;
+  transition: background 0.3s ease;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}
