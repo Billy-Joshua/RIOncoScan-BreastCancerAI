@@ -29,3 +29,4 @@ java RIOncoScan
 
 # Optional: specify input and output files
 java RIOncoScan wdbc.data predictions.csv
+pure JAVA
