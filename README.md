@@ -23,7 +23,7 @@ id,diagnosis,radius_mean,texture_mean,perimeter_mean,area_mean,smoothness_mean,.
 - **diagnosis**: M (malignant) or B (benign), or 1/0
 - **Features**: 30 numeric features (radius_mean, texture_mean, etc.)
 
-## Usage
+
 
 ### Prerequisites
 - Java 17 or higher
