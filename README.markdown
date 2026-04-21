@@ -13,18 +13,18 @@ The system can load real-world datasets, train a model, evaluate accuracy, and s
 - Evaluates test accuracy
 - Saves predictions to `predictions.csv`
 
-## Dataset
+ Dataset
 - Source: [WDBC dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 - CSV format:  
 `ID, Feature1, Feature2, ..., Feature30, Diagnosis (M/B)`
 - Optional: remove missing/invalid rows, normalize features
 
-## Usage
+ Usage
 ```bash
 # Compile Java files
 javac RIOncoScan.java
 
-# Run the project (default input: cancer_data.csv)
+ Run the project (default input: cancer_data.csv)
 java RIOncoScan
 
 # Optional: specify input and output files
